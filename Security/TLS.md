@@ -8,12 +8,12 @@ SSL/TLS are secure communication protocols that helps protect data that goes ove
 
 ##### **SSL**
 
-Secure Sockets Layer.  
-Created by Netscape in 1994.
+- Secure Sockets Layer.  
+- Created by Netscape in 1994.
 
 ##### **TLS**
 
-Transport Layer Security.  
-SSL was handed to IETF in 1999 renaming the protocol to TLS.  
+- Transport Layer Security.  
+- SSL was handed to IETF in 1999 renaming the protocol to TLS.  
 
 ###### **Note**: These 2 terms are sometimes used interchangeably; however, they are not the exact same protocol, they are diffferent versions of the protocol. TLS was built based on SSL, providing improvements to the protocol. It was renamed when it was handed over to the IETF.
