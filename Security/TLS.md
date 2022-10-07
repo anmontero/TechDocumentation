@@ -26,7 +26,7 @@ SSL/TLS are secure communication protocols that helps protect data that goes ove
 - Transport Layer Security.  
 - SSL was handed to IETF in 1999 renaming the protocol to TLS.  
 
-> **Note**: These 2 terms are sometimes used interchangeably; however, they are not the exact same protocol, they are diffferent versions of the protocol. TLS was built based on SSL, providing improvements to the protocol. It was renamed when it was handed over to the IETF.
+> **Note**: These 2 terms are sometimes used interchangeably; however, they are not the exact same thing; they are diffferent versions of the protocol. TLS was built based on SSL, providing improvements to the protocol. It was renamed when it was handed over to the IETF.
 
 
 ---
@@ -58,7 +58,7 @@ When working with SSL/TLS, three key players are involved:
 
 - It initiates the TLS handshake.
 - Web Browser (normally).
-- Optionally authenticated (rare)
+- Optionally authenticated (rare).
 
 
  **Server**  
@@ -89,4 +89,14 @@ When working with SSL/TLS, three key players are involved:
 
 
 > **Reference**: https://w3techs.com/technologies/overview/ssl_certificate
+
+---
+
+## **TLS/SSL Versions**
+
+Many versions of SSL/TLS have existed over the years. As tehcnology evolves, the protocol has evolved. As of today, SSL has been deprecated and only TLS should be used.
+
+
+
+
 
