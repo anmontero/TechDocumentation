@@ -17,3 +17,9 @@ SSL/TLS are secure communication protocols that helps protect data that goes ove
 - SSL was handed to IETF in 1999 renaming the protocol to TLS.  
 
 ###### **Note**: These 2 terms are sometimes used interchangeably; however, they are not the exact same protocol, they are diffferent versions of the protocol. TLS was built based on SSL, providing improvements to the protocol. It was renamed when it was handed over to the IETF.
+
+##### SSL/TLS protect data in three ways:
+
+- **Confidentiality**: Data is only accessible by the intended Client and Server. - **Encryption**
+- **Integrity**: Detects if data is modified in transit. - **Hashing**
+- **Authentication**: Client/Server are indeed who they say they are. - **PKI**
