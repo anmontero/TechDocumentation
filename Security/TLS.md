@@ -9,6 +9,7 @@ The following article goes over the basic details of how TLS works.
 - [SSL/TLS protect data in three ways](#SSL/TLS-protect-data-in-three-ways)
 - [Anti-Replay and Non-Repudiation](#Anti-Replay-and-Non-Repudiation)
 - [Key Players](#Key-Players)
+- [TLS/SSL Versions](#TLS/SSL-Versions)
 
 ---
 
