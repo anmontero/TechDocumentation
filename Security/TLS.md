@@ -101,4 +101,4 @@ Many versions of SSL/TLS have existed over the years. As tehcnology evolves, the
 
 
 ![SSL Labs Protocol Support](https://github.com/anmontero/TechDocumentation/blob/main/Security/Images/SSLLABSProtocolSupport.png)
-> SSL Labs Protocol Support - https://www.ssllabs.com/ssl-pulse/
+> SSL Labs Protocol Support as of 09/04/2022 - https://www.ssllabs.com/ssl-pulse/
