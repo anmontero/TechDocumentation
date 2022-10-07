@@ -100,5 +100,5 @@ Many versions of SSL/TLS have existed over the years. As tehcnology evolves, the
 > TLS Versions - pracnet.net - practical-tls
 
 
-
-> SSL Labs Protocol Support https://www.ssllabs.com/ssl-pulse/
+![SSL Labs Protocol Support](https://github.com/anmontero/TechDocumentation/blob/main/Security/Images/SSLLABSProtocolSupport.png)
+> SSL Labs Protocol Support - https://www.ssllabs.com/ssl-pulse/
