@@ -96,7 +96,7 @@ When working with SSL/TLS, three key players are involved:
 
 Many versions of SSL/TLS have existed over the years. As tehcnology evolves, the protocol has evolved. As of today, SSL has been deprecated and only TLS should be used.
 
-[[https://github.com/anmontero/TechDocumentation/blob/main/Security/Images/TLSVersions.png|TLS Version]]
+[[https://github.com/anmontero/TechDocumentation/blob/main/Security/Images/TLSVersions.png | TLS Version]]
 
 
 
