@@ -6,7 +6,7 @@ The following article goes over the basic details of how TLS works.
 - [SSL vs LS](#SSL-vs-TLS)
 - [SSL](#SSL)
 - [TLS](#TLS)
-- [SSL/TLS protect data in three ways](#SSL/TLS-protect-data-in-three-ways)
+- [SSL & TLS protect data in three ways](#SSL-&-TLS-protect-data-in-three-ways)
 - [Anti-Replay and Non-Repudiation](#Anti-Replay-and-Non-Repudiation)
 - [Key Players](#Key-Players)
 - [TLS/SSL Versions](#TLS/SSL-Versions)
@@ -33,7 +33,7 @@ SSL/TLS are secure communication protocols that helps protect data that goes ove
 ---
 
 
-## **SSL/TLS protect data in three ways**
+## **SSL & TLS protect data in three ways**
 
 - **Confidentiality**: Data is only accessible by the intended Client and Server. - **Encryption**
 - **Integrity**: Detects if data is modified in transit. - **Hashing**
