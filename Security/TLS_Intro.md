@@ -6,7 +6,7 @@ The following article goes over the basic details of how TLS works.
 - [SSL vs LS](#SSL-vs-TLS)
 - [SSL](#SSL)
 - [TLS](#TLS)
-- [SSL & TLS protect data in three ways](#SSL-&-TLS-protect-data-in-three-ways)
+- [SSL/TLS protect data in three ways](#SSL/TLS-protect-data-in-three-ways)
 - [Anti-Replay and Non-Repudiation](#Anti-Replay-and-Non-Repudiation)
 - [Key Players](#Key-Players)
 - [TLS/SSL Versions](#TLS/SSL-Versions)
@@ -27,13 +27,13 @@ SSL/TLS are secure communication protocols that helps protect data that goes ove
 - Transport Layer Security.  
 - SSL was handed to IETF in 1999 renaming the protocol to TLS.  
 
-> **Note**: These 2 terms are sometimes used interchangeably; however, they are not the exact same thing; they are diffferent versions of the protocol. TLS was built based on SSL, providing improvements to the protocol. It was renamed when it was handed over to the IETF.
+> **Note**: These 2 terms are sometimes used interchangeably, except when referring to a specific version. TLS was built based on SSLv3.0, providing improvements to the protocol. It was renamed when it was handed over to the IETF.
 
 
 ---
 
 
-## **SSL & TLS protect data in three ways**
+## **SSL/TLS protect data in three ways**
 
 - **Confidentiality**: Data is only accessible by the intended Client and Server. - **Encryption**
 - **Integrity**: Detects if data is modified in transit. - **Hashing**
@@ -103,3 +103,5 @@ Many versions of SSL/TLS have existed over the years. As tehcnology evolves, the
 
 ![SSL Labs Protocol Support](https://github.com/anmontero/TechDocumentation/blob/main/Security/Images/SSLLABSProtocolSupport.png)
 > SSL Labs Protocol Support as of 09/04/2022 - https://www.ssllabs.com/ssl-pulse/
+
+
