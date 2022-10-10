@@ -3,6 +3,8 @@
 1. Open **Manage user certificates**.
 2. Open the proper certificate location Folder.
 3. Doble click on the certificate. A Certificate window opens.
+
+    ![rebundle1](https://github.com/anmontero/TechDocumentation/blob/main/Security/Images/rebundle1.png)
 4. Click Details > Copy to File... > Next > Select No > Next > Base-64 enconded > Next 
 5. Select the destination Folder and File name
 6. Click Next > Finish
