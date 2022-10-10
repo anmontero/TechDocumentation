@@ -41,6 +41,6 @@
 
 > **Note:** Make sure there are no spaces and add as many intermediate certificates in the right order as needed.
 
-11. Save the file with extension .cer.
+11. Save the file with extension .crt.
 12. Then recreate the PFX from the bundled CER and private key from step 1 using the following command:
     - openssl pkcs12 -export -out certificate.pfx -inkey privateKey.key -in certificate.crt
