@@ -14,7 +14,7 @@
 6. Click **Next** > **Finish**
 7. On the same Certificate window > click **Certification Path** > Click on the Intermediate certificate > **View Certificate**
 
-![rebundle3](https://github.com/anmontero/TechDocumentation/blob/main/Security/Images/rebundle3.png)
+    ![rebundle3](https://github.com/anmontero/TechDocumentation/blob/main/Security/Images/rebundle3.png)
 
 8. A new Certificate window opens for the intermediate cert.
 9. Repeat steps 4 - 6. Make sure to name the certificate with an easy to identify name so you know this is the intermediate (needed for step 10). For example: myintermediatecertificate.cer.  
@@ -36,7 +36,7 @@
         -----END CERTIFICATE-----
         ```
 
-> **Note:** Make sur ethere are no spaces and add as many intermediate certificates in the right order as needed.
+> **Note:** Make sure there are no spaces and add as many intermediate certificates in the right order as needed.
 
 11. Save the file with extension .cer.
 
