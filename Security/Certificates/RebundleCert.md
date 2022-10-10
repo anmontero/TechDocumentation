@@ -36,7 +36,7 @@
         -----END CERTIFICATE-----
         ```
 
-> **Note:** Add as many intermediate certificates in the right order as needed.
+> **Note:** Make sur ethere are no spaces and add as many intermediate certificates in the right order as needed.
 
 11. Save the file with extension .cer.
 
