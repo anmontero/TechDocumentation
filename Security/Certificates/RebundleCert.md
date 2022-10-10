@@ -14,7 +14,12 @@
     ![rebundle2](https://github.com/anmontero/TechDocumentation/blob/main/Security/Images/rebundle2.png)
 
 5. Select the destination Folder and File name
+    - Recommended naming:
+        - leaf.cer
+        - Intermediate.cer
+        - root.cer
 6. Click **Next** > **Finish**
+    - Save the file as it will be needed in step 10.
 7. On the same Certificate window > click **Certification Path** > Click on the Intermediate certificate > **View Certificate**
 
     ![rebundle3](https://github.com/anmontero/TechDocumentation/blob/main/Security/Images/rebundle3.png)
@@ -44,3 +49,5 @@
 11. Save the file with extension .crt.
 12. Then recreate the PFX from the bundled CER and private key from step 1 using the following command:
     - openssl pkcs12 -export -out certificate.pfx -inkey privateKey.key -in certificate.crt
+
+The newly create pfx certificate can now be uploaded to the Application Gateway.
