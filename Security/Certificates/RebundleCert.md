@@ -25,8 +25,7 @@
     ![rebundle3](https://github.com/anmontero/TechDocumentation/blob/main/Security/Images/rebundle3.png)
 
 8. A new Certificate window opens for the intermediate cert.
-9. Repeat steps 4 - 6. Make sure to name the certificate with an easy to identify name so you know this is the intermediate (needed for step 10). For example: myintermediatecertificate.cer.  
-    a. Make sure to use a proper naming in case the chain contains more than 1 intermediate certificate.
+9. Repeat steps 4 - 6. Make sure to use the recommended naming convention.  
 10. Open a text editor (such as notepad, notepad++) and paste the entire body of each certificate into one text file in the following order:
     - The Primary/Leaf Certificate.
     - The Intermediate Certificate(s).
