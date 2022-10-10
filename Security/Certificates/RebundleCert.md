@@ -1,18 +1,18 @@
 # **Rebundle a Certificate using Windows**
 
 1. Open **Manage user certificates**.
-2. Open the proper certificate location Folder.
-3. Doble click on the certificate. A Certificate window opens.
+2. Naviga to the proper certificate location.
+3. Doble click on the certificate. A new window opens.
 
     ![rebundle1](https://github.com/anmontero/TechDocumentation/blob/main/Security/Images/rebundle1.png)
 
-4. Click Details > Copy to File... > Next > Select No > Next > Base-64 enconded > Next 
+4. Click **Details** > **Copy to File...** > **Next** > Select **No** > **Next** > **Base-64 enconded** > **Next**
 
     ![rebundle2](https://github.com/anmontero/TechDocumentation/blob/main/Security/Images/rebundle2.png)
 
 5. Select the destination Folder and File name
-6. Click Next > Finish
-7. On the same Certificate window > click Certification Path > Click on the Intermediate certificate > View Certificate
+6. Click **Next** > **Finish**
+7. On the same Certificate window > click **Certification Path** > Click on the Intermediate certificate > **View Certificate**
 
 ![rebundle3](https://github.com/anmontero/TechDocumentation/blob/main/Security/Images/rebundle3.png)
 
