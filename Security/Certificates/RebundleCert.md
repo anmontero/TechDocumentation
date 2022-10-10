@@ -2,6 +2,7 @@
 
 1. First create a private.key from the existing PFX.
     - openssl pkcs12 -in Certificate.pfx -nocerts -out private.key
+    - Save the key file. I will be needed in step 12.
 2. Open **Manage user certificates**.
 3. Naviga to the proper certificate location.
 4. Doble click on the certificate. A new window opens.
