@@ -21,7 +21,7 @@
     ![rebundle2](https://github.com/anmontero/TechDocumentation/blob/main/Security/Images/rebundle2.png)
 
 5. Select the destination Folder and File name
-    - Recommended naming:
+    - Recommended naming convention:
         - leaf.cer
         - Intermediate.cer
         - root.cer
@@ -35,7 +35,7 @@
 9. Repeat steps 4 - 6 before moving to step 11. 
     - Make sure to use the recommended naming convention.  
 10. Open a text editor (such as notepad, notepad++) and paste the entire body of each certificate into one text file in the following order:
-    - The Primary/Leaf Certificate.
+    - The Leaf Certificate.
     - The Intermediate Certificate(s).
     - The Root Certificate.
     Make sure to include the beginning and end tags on each certificate. The result should look like this:
