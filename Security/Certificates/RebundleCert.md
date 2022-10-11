@@ -3,6 +3,7 @@
 > Assumptions  
 > - You already have a valid .pfx certificate.
 > - The certificate has been installed in Windows.
+> - Openssl is already installed.
 
 > **Note**: Steps 2-10 can be omitted either if you already have the individual base64 files for each cert in the chain or if you get them from a browser.
 
