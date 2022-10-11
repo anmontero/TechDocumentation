@@ -19,7 +19,7 @@
         - Intermediate.cer
         - root.cer
 6. Click **Next** > **Finish**
-    - Save the file as it will be needed in step 10.
+    - Save the file as it will be needed in step 11.
 7. On the same Certificate window > click **Certification Path** > Click on the Intermediate certificate > **View Certificate**
 
     ![rebundle3](https://github.com/anmontero/TechDocumentation/blob/main/Security/Images/rebundle3.png)
