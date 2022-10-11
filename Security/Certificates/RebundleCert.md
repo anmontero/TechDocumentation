@@ -36,10 +36,13 @@
 
     ![rebundle3](https://github.com/anmontero/TechDocumentation/blob/main/Security/Images/rebundle3.png)
 
-8. A new Certificate window opens for the intermediate cert.
-9. Repeat steps 4 - 6 before moving to step 11. 
+8. A new Certificate window opens for the intermediate or root cert.
+9. Repeat steps 5 - 6. 
     - Make sure to use the recommended naming convention.  
-10. Open a text editor (such as notepad, notepad++) and paste the entire body of each certificate into one text file in the following order:
+10. Close the window and go back to Step 7 but ths time select either the next intermidiate (if multiple) or the root certificate.
+11. Repeat steps 4 - 6.
+12. If you already have all certificate, go to step 13.
+13. Open a text editor (such as notepad, notepad++) and paste the entire body of each certificate into one text file in the following order:
     - The Leaf Certificate.
     - The Intermediate Certificate(s).
     - The Root Certificate.
@@ -58,8 +61,8 @@
 
 > **Note:** Make sure there are no spaces and add as many intermediate certificates in the right order as needed.
 
-11. Save the file with extension .crt
-12. Then recreate the PFX from the bundled CER and private key from step 1 using the following command:
+14. Save the file with extension .crt
+15. Then recreate the PFX from the bundled CER and private key from step 1 using the following command:
     - openssl pkcs12 -export -out certificate.pfx -inkey privateKey.key -in certificate.crt
 
 > The newly create pfx certificate can now be uploaded to the Application Gateway.
