@@ -27,6 +27,9 @@
         - leaf.cer
         - Intermediate.cer
         - root.cer
+> **Note**  
+> This first file should be the leaf certificate.
+
 6. Click **Next** > **Finish**
     - Save the file as it will be needed in step 11.
 7. On the same Certificate window > click **Certification Path** > Click on the Intermediate certificate > **View Certificate**
