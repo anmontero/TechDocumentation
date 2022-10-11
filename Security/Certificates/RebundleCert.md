@@ -1,12 +1,14 @@
 # **Rebundle a pfx certificate using Windows**
 
-> Assumptions  
+> ### **Assumptions**  
 > - You already have a valid .pfx certificate.
 > - The certificate has been installed in Windows.
 > - Openssl is already installed.
 
-> **Note**: Steps 2-10 can be omitted either if you already have the individual base64 files for each cert in the chain or if you get them from a browser.
+> ### **Note**
+> Steps 2-10 can be omitted either if you already have the individual base64 files for each cert in the chain or if you get them from a browser.
 
+### **Steps**  
 1. First create a private.key from the existing PFX.
     - openssl pkcs12 -in Certificate.pfx -nocerts -out private.key
     - Save the key file. I will be needed in step 12.
@@ -57,4 +59,4 @@
 12. Then recreate the PFX from the bundled CER and private key from step 1 using the following command:
     - openssl pkcs12 -export -out certificate.pfx -inkey privateKey.key -in certificate.crt
 
-The newly create pfx certificate can now be uploaded to the Application Gateway.
+> The newly create pfx certificate can now be uploaded to the Application Gateway.
