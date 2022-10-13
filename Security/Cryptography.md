@@ -139,3 +139,4 @@ Encrypt a message with you private key that can be decrypted only with your asso
 ---
 # **How SSL/TLS uses Cryptography**
 
+![TLS VersEncryption](https://github.com/anmontero/TechDocumentation/blob/main/Security/Images/HowTLSUSESENCRY.png)
