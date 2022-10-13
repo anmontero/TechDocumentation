@@ -79,7 +79,63 @@ The industry standard implementation of MAC is known as HMAC. HMAC defines how t
 
 # **Encryption**
 
+Encryption is used to provide Confidentiality. Only the intended receipient can interpret the Data.
+
+- **Plain Text**: Data before encryptin.
+- **Cypher Text**: Data while encrypted.
+
+**Simple Encryption**: Transforms Plaintext into Cypher Text. It does not escale as for it to be secured, I need to figure out a different way to transform the data. If I used the same transformation method for all users, data can be decrypted by other users data was not intended for.
+
+**Key Based Encryption**: Combines industry vetted algorithms with a Secret Key.
+- Algorithms are created by experts.
+- Secret Keys can be randomly generated.
+
+### **There are two types of Key Based Encryption:**
+
+- Symmetric Encryption
+    - Encrypt and Decrypt using the **same** key.
+- Asymmetric Encryption
+    - Encrypt and Decrypt using **different** keys.
+    - Two different keys are mathematically related.
+    - What one key encrypts, only the other can decrypt.
+        - One key will be made **Public**.
+        - Other key will be kept **Private**.
 
 
+### **List of Encryption Algorithms:**
 
+- Asymmetric Encryption
+    - DSA
+    - RSA
+    - Diffie-Hellman
+    - ECDSA
+    - ECDH
+- Symmetric Encryption
+    - DES - 56 bit key
+    - RC4 - 128 bit key
+    - 3DES - 168 bit key
+    - AES - 128,192, or 256 bit keys
+    - ChaCha20 - 128 or 256 bit keys
+
+---
+# **Public and Private Keys**
+
+Asymmetric Key Pairs can be used used for **Signatures**.
+
+Asymmetric Encryption is used to share a Symmetric key for bulk data encryption. Public and Private keys are used to share a Symmetric key.
+
+
+### **Hybrid Encryption**
+
+Concept of using both encryption types.
+
+- Asymmetric to facilitate a Key Exchange.
+- Secret Key used with Symmetric Encryption for bulk data.
+
+### **Signatures**
+
+Encrypt a message with you private key that can be decrypted only with your associated Public key, proving you are the only person that could have sent the message as you are the only one who has the private key.
+
+---
+# **How SSL/TLS uses Cryptography**
 
