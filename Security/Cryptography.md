@@ -1,5 +1,7 @@
 # **Hashing**
 
+[[_TOC_]]
+
 ### **Definition**
 
 Algorithm which takes an input a message of arbitrry lenght and produces as output a "fingerprint" of the original message. The result of the hashing algorithm is called a **Digest**.
