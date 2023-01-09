@@ -144,3 +144,13 @@ Encrypt a message with you private key that can be decrypted only with your asso
 ![TLS Encryption](https://github.com/anmontero/TechDocumentation/blob/main/Security/Images/HowTLSUSESENCRY.png)
 
 ![TLS Encryption1](https://github.com/anmontero/TechDocumentation/blob/main/Security/Images/HowTLSUSESENCRY1.png)
+
+---
+# **Public Key Infraestructure**
+
+Three entities form a PKI: Client, Server, CA
+
+- **Client** - needs to connect securely or verify an identity
+- **Server** - needs to provide its identity
+- **Certificate Authority** - validate identities & generate certificates
+
