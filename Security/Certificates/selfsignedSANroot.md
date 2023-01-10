@@ -15,27 +15,24 @@ req_extensions = req_ext
 prompt = no
 
 [req_distinguished_name]
-C   = IN
-ST  = Karnataka
-L   = Bengaluru
-O   = GoLinuxCloud
-OU  = R&D
-CN  = ban21.example.com
+C   = CR
+ST  = San Jose
+L   = San Jose
+O   = TonyWebtest
+OU  = WWW
+CN  = 10.6.0.4
 
 [req_ext]
 subjectAltName = @alt_names
 
 [alt_names]
-IP.1 = 10.10.10.13
-IP.2 = 10.10.10.14
-IP.3 = 10.10.10.17
-DNS.1 = centos8-2.example.com
-DNS.2 = centos8-3.example.com
+DNS.1 = tonywebtest.com
+DNS.2 = *.tonywebtest.com
 
 
 Generate the CSR
 
-openssl req -new -key server.key -out server.csr -config server_cert.cnf
+openssl req -new -key server.key -out server.csr -config req.cnf
 
 Verify CSR SAN
 
@@ -44,7 +41,7 @@ Verify CSR SAN
 
 Generate the SAN cert
 
-openssl x509 -req -days 365 -in server.csr -CA /root/tls/certs/cacert.pem -CAkey /root/tls/private/cakey.pem -CAcreateserial -out server.crt -extensions req_ext -extfile server_cert.cnf
+openssl x509 -req -days 365 -in server.csr -CA intermediate.crt -CAkey intermediate.key -CAcreateserial -out server.crt -extensions req_ext -extfile req.cnf
 
 
 Check SAN
