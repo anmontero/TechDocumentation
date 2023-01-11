@@ -52,3 +52,9 @@ openssl x509 -text -noout -in server.crt | grep -A 1 "Subject Alternative Name"
 https://support.citrix.com/article/CTX135602/how-to-create-a-selfsigned-san-certificate-using-openssl-on-citrix-adc-appliance
 
 https://www.golinuxcloud.com/openssl-subject-alternative-name/
+
+https://www.golinuxcloud.com/add-x509-extensions-to-certificate-openssl/#Scenario-3_Generate_certificate_with_X509_extensions
+
+https://stackoverflow.com/questions/26759550/how-to-create-own-self-signed-root-certificate-and-intermediate-ca-to-be-importe
+
+https://jamielinux.com/docs/openssl-certificate-authority/
