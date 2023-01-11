@@ -60,7 +60,28 @@ openssl ca -batch -config root-ca/openssl.conf -keyfile root-ca/private/ca.key -
 
 mkdir out
 
-for I in `seq 1 3` ; do
-  openssl req -new -keyout out/$I.key -out out/$I.request -days 365 -nodes -subj "/CN=$I.example.com" -newkey rsa:2048
-  openssl ca -batch -config root-ca/openssl.conf -keyfile intermediate/private/intermediate.key -cert intermediate/certs/intermediate.crt -out out/$I.crt -infiles out/$I.request
-done
+echo '
+[req]
+distinguished_name = req_distinguished_name
+req_extensions = req_ext
+prompt = no
+
+[req_distinguished_name]
+C   = CR
+ST  = San Jose
+L   = San Jose
+O   = TonyWebtest
+OU  = WWW
+CN  = 10.6.0.4
+
+[req_ext]
+subjectAltName = @alt_names
+
+[alt_names]
+DNS.1 = tonywebtest.com
+DNS.2 = *.tonywebtest.com
+' > out/req.cnf
+
+openssl genrsa -out out/leaf.key 2048
+openssl req -new -key out/leaf.key -out out/leaf.csr -config out/req.cnf
+openssl x509 -req -days 365 -in out/leaf.csr -CA intermediate/certs/intermediate.crt -CAkey intermediate/private/intermediate.key -CAcreateserial -out out/leaf.crt -extensions req_ext -extfile out/req.cnf
