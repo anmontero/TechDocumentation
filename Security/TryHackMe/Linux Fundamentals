@@ -1,1 +1,26 @@
+FIND Command
 
+#if you know the file name
+
+find -name passwords.txt
+
+#find every .txt file that's in our current directory
+
+find -name *.txt
+
+GREP Command
+
+#allows us to search the contents of files for specific values that we are looking for.
+
+grep ""
+
+Operator "&"
+#This operator allows us to execute commands in the background.
+
+Operator "&&"
+#This shell operator is a bit misleading in the sense of how familiar is to its partner "&". Unlike the "&" operator, we can use "&&" to make a list of commands to run for example command1 && command2. 
+#However, it's worth noting that command2 will only run if command1 was successful.
+
+Crontab is one of the processes that is started during boot, which is responsible for facilitating and managing cron jobs.
+https://crontab-generator.org/
+https://crontab.guru/
