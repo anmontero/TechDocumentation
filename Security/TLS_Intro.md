@@ -41,8 +41,8 @@ SSL/TLS are secure communication protocols that helps protect data that goes ove
 
 ## **Anti-Replay and Non-Repudiation**
 
-- **Anti-Replay**: make a copy of the message and send it back to the server to potentially repeat the action/transaction to either optain data or make modifications. This is solved by adding a sequence number to evey message sent by SSL/TLS. The server check if it has already received the message based on teh sequence number.
-- **Non-Repudiation**: the dictionary definition is to refuse to have anything to do with. With Non-Repudiation, the sender cannot deny sending a message. No additional action need to be taken to enable Non-Repudiation, it is built as par of Integrity and Authentication.
+- **Anti-Replay**: make a copy of the message and send it back to the server to potentially repeat the action/transaction to either optain data or make modifications. This is solved by adding a sequence number to evey message sent by SSL/TLS. The server check if it has already received the message based on the sequence number.
+- **Non-Repudiation**: the dictionary definition of repudiation is to refuse to have anything to do with. With Non-Repudiation, the sender cannot deny sending a message. No additional action need to be taken to enable Non-Repudiation, it is built as par of Integrity and Authentication.
 
 ## **Key Players**
 
@@ -59,7 +59,7 @@ When working with SSL/TLS, three key players are involved:
 
 - It initiates the TLS handshake.
 - Web Browser (normally).
-- Optionally authenticated (rare).
+- Optionally authenticated (MA).
 
 
  **Server**  
