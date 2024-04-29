@@ -1,7 +1,5 @@
 # **Hashing**
 
-[[_TOC_]]
-
 ### **Definition**
 
 Algorithm which takes an input a message of arbitrry lenght and produces as output a "fingerprint" of the original message. The result of the hashing algorithm is called a **Digest**.
@@ -54,7 +52,7 @@ echo -n "hello" | sha256sum
 Hashing is used to provide Integrity.
 
 - The sender sends a Message and a Digest.
-- The receiver calculates the Digest  from the received Message
+- The receiver calculates the Digest  from the received Message.
 - The Receiver compares both digests.
     - If the digests are identical, the messages was not modified in transit.
 
@@ -64,18 +62,18 @@ Hashing is used to provide Integrity.
 
 ### **Solution**
 
-- Before each party shared the meesage, they shared a mutual secret key.
+- Before each party shared the meesage, they share a mutual secret key.
 - The sender combines the message with the key to generate the digest.
 - The receiver recalculates the has with his key and message.
 
-This is known as Message Authentication Code (MAC) which provides Integrity (Hashing) and Authentication (key). The sender and receiver must agree on how to combine the message and the key. If the combination is done in a different order, the resulting dihest will be different.
+This is known as Message Authentication Code (MAC) which provides Integrity (Hashing) and Authentication (key). The sender and receiver must agree on how to combine the message and the key. If the combination is done in a different order, the resulting digest will be different.
 
 _Example:_
 
 - Combination 1: message + key == 1 digest.
 - Combination 2: key + message == different digest.
 
-The industry standard implementation of MAC is known as HMAC. HMAC defines how to use MAC and how combine the mesaage and the key.
+The industry standard implementation of MAC is known as HMAC. HMAC defines how to use MAC and how to combine the mesaage and the key.
 
 ---
 
@@ -96,19 +94,24 @@ Encryption is used to provide Confidentiality. Only the intended receipient can 
 
 - Symmetric Encryption
     - Encrypt and Decrypt using the **same** key.
+    - Faster.
+    - Weakness - Secret key mush be shared - **Less Secure**.
 - Asymmetric Encryption
     - Encrypt and Decrypt using **different** keys.
-    - Two different keys are mathematically related.
+    - Two different keys that are mathematically related.
     - What one key encrypts, only the other can decrypt.
         - One key will be made **Public**.
         - Other key will be kept **Private**.
+    - Slower -  requires much larger key sizes.
+    - Strength - Private Key is never shared - **More Secure**.
+      
 
 
 ### **List of Encryption Algorithms:**
 
 - Asymmetric Encryption
     - DSA
-    - RSA
+    - RSA - **Recommended Key Size: 2048 bits**.
     - Diffie-Hellman
     - ECDSA
     - ECDH
@@ -122,10 +125,15 @@ Encryption is used to provide Confidentiality. Only the intended receipient can 
 ---
 # **Public and Private Keys**
 
+Asymmetric Key Pairs can be used used for **Encryption**.
+
+Asymmetric Encryption is used to share a Symmetric key for bulk data encryption. **Public and Private keys are used to share a Symmetric key**.
+
 Asymmetric Key Pairs can be used used for **Signatures**.
 
-Asymmetric Encryption is used to share a Symmetric key for bulk data encryption. Public and Private keys are used to share a Symmetric key.
+### **Signatures**
 
+Encrypt a message with you private key that can be decrypted only with your associated Public key, proving you are the only person that could have sent the message as you are the only one who has the private key.
 
 ### **Hybrid Encryption**
 
@@ -134,9 +142,17 @@ Concept of using both encryption types.
 - Asymmetric to facilitate a Key Exchange.
 - Secret Key used with Symmetric Encryption for bulk data.
 
-### **Signatures**
+### **Summary**
 
-Encrypt a message with you private key that can be decrypted only with your associated Public key, proving you are the only person that could have sent the message as you are the only one who has the private key.
+**Hybrid Encryption**
+
+- Use Asymmetric Encryption to securely establish Symmetric Keys.
+- Symmetric Keys can then be used with Symmetric Encryption to protect bulk data.
+
+**Signatures**
+
+- Uses the Sender's Private Key to encrypt the Hash of a data.
+- Provides Integrity and Authentication for what is Signed.
 
 ---
 # **How SSL/TLS uses Cryptography**
