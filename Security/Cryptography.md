@@ -157,6 +157,14 @@ Concept of using both encryption types.
 ---
 # **How SSL/TLS uses Cryptography**
 
+**SSL and TLS have three main purposes**
+
+- **Confidentiality** - Data is only accessible by Client and Server ---> **Encryption**.
+- **Integrity** - Data is not modified between Client and Server ---> **Hashing**.
+- **Authentication** - Client/Server are indeed who they say they are ---> **PKI**.
+
+
+
 ![TLS Encryption](https://github.com/anmontero/TechDocumentation/blob/main/Security/Images/HowTLSUSESENCRY.png)
 
 ![TLS Encryption1](https://github.com/anmontero/TechDocumentation/blob/main/Security/Images/HowTLSUSESENCRY1.png)
@@ -164,9 +172,52 @@ Concept of using both encryption types.
 ---
 # **Public Key Infraestructure**
 
-Three entities form a PKI: Client, Server, CA
+Three entities form a PKI: Client, Server, CA.
 
-- **Client** - needs to connect securely or verify an identity
-- **Server** - needs to provide its identity
-- **Certificate Authority** - validate identities & generate certificates
+- **Client** - needs to connect securely or verify an identity.
+- **Server** - needs to provide its identity.
+- **Certificate Authority** - validate identities & generate certificates.
 
+---
+# **RSA**
+
+- Created in 1977 by: Ron **R**ivest, Adi **S**hamir, Loanard **A**dleman.
+- Most common Asymmetric eNCRYPTION ALGORITHM.
+- RSA creates a pair of keys.
+  - Encrypt with one, decrypt with the other
+
+---
+# **Diffie-Hellman**
+
+- Allows two parties to establish a shared secret over an unsecured medium.
+- The Shared Secret is never transmitted, only the values used to derive the secret.
+- The shared secret is then used to generate Symmetric Keys.
+
+---
+# **Digital Signature Algorithm**
+
+- DSA is an asymmetric encryptin algorithm.
+- DSA simply creates and validates signatures.
+
+**Signature Generation**
+
+- INPUT: Message, Private Key, Random #, DSA Parameters.
+- OUTPUT: Signature.
+
+**Signature Verification**
+
+- INPUT: Message, Private Key, Signature, DSA Parameters.
+- OUTPUT: 1 or 0 (True or False)
+
+**Summary**
+
+# **Asymmetric Encryption Protocols**
+
+- **RSA**:
+   - Encryption.
+   - Signatures.
+   - Key Exchange.
+- **DH**:
+   - Key exchange.
+- **DSA**:
+   - Signatures.
