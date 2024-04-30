@@ -141,7 +141,9 @@ All TLS certificates require a private key to work. The private key is a separat
 
 > **Reference**: https://www.digicert.com/blog/where-is-your-private-key
 
-### **What is CSR?**
+### **What is in a CSR?**
+
+A Certificate Signing Request (CSR) is a block of encoded text that is given to a Certificate Authority when applying for an SSL/TLS certificate. It contains information that will be included in your certificate such as your Organization Name, Common Name (domain name), Locality, and Country. It also includes the public key that will be included in the certificate. The private key is paired with this public key and should be kept secure and not included in the CSR.
 
 There are three sections of a certificate Signing Request:
 
