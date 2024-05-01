@@ -150,3 +150,19 @@ There are three sections of a certificate Signing Request:
 - Certificate Request Information.
 - Signature Algorithm.
 - Signature.
+
+
+### **File Formats**
+
+#### **DER**
+
+- **D**istinguished **E**ncoding **R**ules
+- Format of a certificate on the wire.
+  - Binary encoded.
+
+#### **PEM**
+
+
+
+
+
