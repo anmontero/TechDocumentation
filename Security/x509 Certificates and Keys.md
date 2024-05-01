@@ -154,15 +154,10 @@ There are three sections of a certificate Signing Request:
 
 ### **File Formats**
 
-#### **DER**
-
-- **D**istinguished **E**ncoding **R**ules
-- Format of a certificate on the wire.
-  - Binary encoded.
-
-#### **PEM**
-
-
-
+- **PEM** format: This is the most commonly used format for storing certificates. It is encoded in Base64 and is often referred to as “text format”. The most often used extensions for these certificates are .cer, .crt, .pem, or .key (typically for private key). This format is used by Apache and all servers on Unix/Linux servers1.
+- **DER** format: This is a binary certificate format. All certificate types and private key can be stored in DER format. Certificates in DER often have the extension .cer or .der. DER format is used on Java platforms1.
+- **P7B/PKCS#7** format: PKCS#7 or P7B extension means one or more Base64 ASCII certificates stored in a .p7b or .p7c file (container). The P7B file contains the certificate and its chain (intermediate certificates) but does not contain the private key. P7B files are most commonly used on the Java Tomcat platform1.
+- **PFX/P12/PKCS#12** format: PKCS #12 or PFX/P12 format is a binary format for storing a certificate (including its intermediate) with a private key. Certificates and private key are password protected in the PFX file (container). The most commonly used extension is .pfx and .p12. PKCS#12 (PFX) is very often used on Windows machines to import and export certificates together with a private key1.
+- Please note that the file extension does not necessarily indicate the format of the certificate. For example, a .cer file could be in either PEM or DER format1. It’s also important to note that some servers or devices may require a specific certificate format2.
 
 
