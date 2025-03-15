@@ -13,12 +13,10 @@ Real world Hasing Algotirhms must satisfy 4 requiremtns:
 - Slight changes produce drastic differences.
 - The resulting digest is fixed width (length).
 
-
-
 ### **Collisions**
 
 - Two messages result on identical digests.
-- They cannotbe avoided.
+- Collisions cannot be avoided.
     - It is a byproduct of "fixed width digests".
 
 ### **Common Hashing Algorithms**
